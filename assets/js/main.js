@@ -104,3 +104,7 @@ function toggleMode() {
 
 //Lev1_2
 //==============
+
+function resetHeadline() {
+    headline.classList.remove('headline-style')
+}
