@@ -53,10 +53,10 @@
         <form onsubmit="return false" class="form3-1" action="">
             <h2>Fonts Generator</h2>
             <div>
-                <input onchange="changeFontsSize()" type="range" name="range" min="0" max="100" id="font-size">
+                <input onchange="changeFontsSize()" type="range" name="range" min="5" max="150" id="font-size">
                 <label for="">Font-size</label>
                 <select onchange="changeFontsSize()" name="" id="font-family">
-                    <option value="Bodoni Moda', serif">'Bodoni Moda', serif</option>
+                    <option value="Bodoni Moda">'Bodoni Moda', serif</option>
                     <option value="'Open Sans', sans-serif ">'Open Sans', sans-serif </option>
                     <option value="'Roboto', sans-serif ">'Roboto', sans-serif </option>
                     <option value="'Yusei Magic'">'Yusei Magic'</option>
@@ -64,7 +64,7 @@
                 <input onchange="changeFontsSize()" type="text" name="text" id="input-text">
             </div>
 
-            <h1 id="h1-output"></h1>
+            <h1 id="headline-output"></h1>
         </form>
     </section>
 
@@ -72,11 +72,11 @@
         <div class="form3-2">
             <form onsubmit="return false" action="">
                 <label for="">RED</label>
-                <input onchange="changeBackground()" type="range" name="" id="red" step="10" min="0" max="250">
+                <input onchange="changeBackground()" type="range" name="" id="red" step="5" min="0" max="250">
                 <label for="">GREEN</label>
-                <input onchange="changeBackground()" type="range" name="" id="green" step="10" min="0" max="250">
+                <input onchange="changeBackground()" type="range" name="" id="green" step="5" min="0" max="250">
                 <label for="">BLUE</label>
-                <input onchange="changeBackground()" type="range" name="" id="blue" step="10" min="0" max="250">
+                <input onchange="changeBackground()" type="range" name="" id="blue" step="5" min="0" max="250">
             </form>
         </div>
     </section>
@@ -86,14 +86,13 @@
         <div class="class-list">
             <h1 id="headline">Meine Bucket List</h1>
             <ul id="list">
-                <li>Gut Deutsch lernen</li>
+                <li>Deutsch verbessern</li>
                 <li>SuperCoder werden</li>
                 <li>Heimat fahren</li>
                 <li>Job finden</li>
 
             </ul>
             <button onclick="changeHeadline()">Headline styling</button>
-
             <button onclick="toggleMode()">Headline toggle</button>
             <button onclick="resetHeadline()">Headline reset</button>
 
