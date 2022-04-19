@@ -56,7 +56,7 @@ let inputFontFamily = document.getElementById('font-family')
 let inputText = document.getElementById('input-text')
     // console.log(inputText);
 
-let outputH1 = document.getElementById('h1-output')
+let outputHeadline = document.getElementById('headline-output')
     // console.log(outputH1);
 
 function changeFontsSize() {
@@ -64,28 +64,27 @@ function changeFontsSize() {
         // console.log(fontSize);
     let fontFamily = inputFontFamily.value
         // console.log(fontFamily);
-    outputH1.style.fontFamily = fontFamily
-    outputH1.style.fontSize = fontSize + 'px'
-    outputH1.innerHTML = inputText.value
+    outputHeadline.style.fontFamily = fontFamily
+    outputHeadline.style.fontSize = fontSize + 'px'
+    outputHeadline.innerHTML = inputText.value
 }
 
 //Lev3_2
 //=========================
-let red = document.getElementById('red')
+let rangeRed = document.getElementById('red')
     // console.log(red);
-let green = document.getElementById('green')
+let rangeGreen = document.getElementById('green')
     // console.log(green);
-let blue = document.getElementById('blue')
+let rangeBlue = document.getElementById('blue')
     // console.log(blue);
 let body = document.getElementById('body')
     // console.log(body);
 
 function changeBackground() {
-    let rangeRed = red.value
-    let rangeGreen = green.value
-    let rangeBlue = blue.value
-
-    body.style.backgroundColor = 'rgb(' + rangeRed + ',' + rangeGreen + ',' + rangeBlue + ')'
+    let red = rangeRed.value
+    let green = rangeGreen.value
+    let blue = rangeBlue.value
+    body.style.backgroundColor = `rgb(${red},${green},${blue})`
 }
 
 //ClassList===========================================================
