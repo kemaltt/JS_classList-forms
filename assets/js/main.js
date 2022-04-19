@@ -8,12 +8,24 @@ let input = document.getElementById('input')
 let output = document.getElementById('output-verdoppel')
     // console.log(ergebnis);
 
+
 function verdoppel() {
     let verdoppel = input.value * 2
         // console.log(verdoppel);
 
     output.innerHTML = verdoppel
 }
+
+
+// 2.variant-------------
+
+// let button = document.getElementById('button')
+
+// button.addEventListener('click', () => {
+//         let verdoppel = input.value * 2
+//         output.innerHTML = verdoppel
+//     })
+
 
 //Lev1_2
 //=====================
