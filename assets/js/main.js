@@ -35,7 +35,7 @@ let inputYear = document.getElementById('input-year')
 let outputAge = document.getElementById('output-age')
     // console.log(outputAge);
 
-function age() {
+function showAge() {
     let year = 2022
     let age = year - inputYear.value
         // console.log(age);
@@ -53,10 +53,16 @@ let outputDifferenz = document.getElementById('output-differenz')
     // console.log(outputDifferenz);
 
 function differenz() {
-    let output = inputAgeOne.value - inputAgeTwo.value
-    console.log(output);
 
+    //Lösung 1
+    let output = inputAgeOne.value - inputAgeTwo.value
+        // console.log(output);
     outputDifferenz.innerHTML += output
+
+    //Lösung 2
+    // let output =  Math.abs(inputAgeOne.value - inputAgeTwo.value) 
+    // outputDifferenz.innerHTML += output
+
 }
 
 //Lev3_1
@@ -104,13 +110,16 @@ function changeBackground() {
 //Lev1_1
 //==============
 let headline = document.getElementById('headline')
+let list = document.getElementById('list')
 
 function changeHeadline() {
     headline.classList.add('headline-style')
+    list.classList.add('list')
 }
 
 function toggleMode() {
     headline.classList.toggle('headline-style')
+    list.classList.toggle('list')
 }
 
 //Lev1_2
@@ -118,4 +127,5 @@ function toggleMode() {
 
 function resetHeadline() {
     headline.classList.remove('headline-style')
+    list.classList.remove('list')
 }
